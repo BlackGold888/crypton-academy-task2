@@ -1,0 +1,23 @@
+{
+  "name": "crypton-academy-task2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackGold888/crypton-academy-task2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackGold888/crypton-academy-task2/issues"
+  },
+  "homepage": "https://github.com/BlackGold888/crypton-academy-task2#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
