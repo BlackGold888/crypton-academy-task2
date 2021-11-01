@@ -12,16 +12,16 @@ async function readFile(fileName) {
                 let temp = users.reduce((previousValue, currentValue) => {
                     if (currentValue.length) {
                         let temp = currentValue.split(" ");
+                        console.log(temp)
                         return [...previousValue,{
                             name: temp[0],
                             requestPerHour: temp[1],
                             totalHours: temp[2],
-                            info: temp[3]
+                            info: temp.slice(3,).toString().split(',').join(' ')
                         }]
                     }
                     return [...previousValue];
                 }, [])
-
                 let result = temp.reduce((previousValue, currentValue) => {
                     let temp = previousValue.find(user => user.name === currentValue.name)
                     if (temp) {
